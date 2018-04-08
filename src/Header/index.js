@@ -7,11 +7,13 @@ import './header.css'
 class Header extends Component {
   render() {
     return (
-      <div className="wrap">
+      <Fragment>
         <div className="add"><AddCategory /></div>
-        <div className="search"><Search /></div>
-        <div className="filter"><Filter /></div>
-      </div>
+        <div className="wrap">
+          <div className="search"><Search /></div>
+          <div className="filter"><Filter /></div>
+        </div>
+      </Fragment>
     )
   }
 }
