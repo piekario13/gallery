@@ -5,10 +5,15 @@ import './header.css'
 
 class Header extends Component {
   render() {
+    let { changeCategory } = this.props
     return (
       <div className="wrap">
-        <div className="search"><Search /></div>
-        <div className="filter"><Filter /></div>
+        <div className="search">
+          <Search />
+        </div>
+        <div className="filter">
+          <Filter changeCategory={changeCategory} />
+        </div>
       </div>
     )
   }

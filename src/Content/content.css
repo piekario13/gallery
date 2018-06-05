@@ -1,0 +1,9 @@
+.Item {
+  display: inline-block;
+  margin-right: 10px;
+  width: 30%;
+}
+
+.Item img {
+  width: 100%;
+}

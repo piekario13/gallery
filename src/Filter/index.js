@@ -4,7 +4,7 @@ import Categories from '../Stories/Store'
 
 class Filter extends Component {
   render() {
-    console.log(Categories)
+    let { changeCategory } = this.props
     return (
       <Fragment>
         <select>
@@ -12,7 +12,7 @@ class Filter extends Component {
           <option value="data">Data</option>
           <option value="alphabet">Alfabetycznie</option>
         </select>
-        <select>
+        <select onChange={event => changeCategory(event)}>
           {Categories.map((item, id) => {
             return (
               <option key={id} value={item.id}>
